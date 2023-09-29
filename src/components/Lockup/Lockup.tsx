@@ -46,7 +46,7 @@ export const Lockup = ({ color = 'default', url, isLink = true, line1, ...props 
     return (
       <a
         className=
-        'su-lockup no-underline inline-block'
+        'lockup no-underline inline-block'
         href={url ?? '/'}
       >
         {LockupContent}
@@ -56,7 +56,7 @@ export const Lockup = ({ color = 'default', url, isLink = true, line1, ...props 
 
   return (
     <div
-      className='su-lockup no-underline inline-block'
+      className='lockup no-underline inline-block'
     >
       {LockupContent}
     </div>

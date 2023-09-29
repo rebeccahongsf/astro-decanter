@@ -9,7 +9,7 @@ interface MainNavItemProps {
 }
 
 export const MainNavItem: React.FC<MainNavItemProps> = ({ link, text, mobileOnly }) => (
-  <li className={cnb(styles.root, mobileOnly ? 'lg:su-hidden' : '')}>
+  <li className={cnb(styles.root, mobileOnly ? 'lg:hidden' : '')}>
     <a href={link} className={styles.link}>
       {text}
     </a>

@@ -50,7 +50,7 @@ export const Logo = ({
   if (isLink) {
     return (
       <a
-        className={cnb('su-logo font-serif', validColor, className)}
+        className={cnb('logo font-serif', validColor, className)}
         href="https://www.stanford.edu"
       >
         {logoText}
@@ -59,6 +59,6 @@ export const Logo = ({
   }
 
   return (
-    <div className={cnb('su-logo font-serif', validColor, className)}>{logoText}</div>
+    <div className={cnb('logo font-serif', validColor, className)}>{logoText}</div>
   );
 };

@@ -19,13 +19,13 @@ export const IdentityBar = ({ color = 'cardinal-red', className, ...props }: Ide
     <Container
       width="site"
       className={cnb(
-        'su-identity-bar su-pt-5 su-pb-1',
+        'identity-bar pt-5 pb-1',
         color ? styles.IdentityBarWrapperColor[color] : '',
         className
       )}
     >
       <Logo
-        className="su-text-20 su-leading-none"
+        className="text-20 leading-none"
         color={styles.IdentityBarLogoColor[color]}
         type="full"
       />
