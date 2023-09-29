@@ -1,7 +1,7 @@
 import React from 'react';
 import { cnb } from 'cnbuilder';
 import useEscape from '../../../hooks/useEscape';
-import { MainNavItem } from './MainMenuItem';
+import { MainNavItem } from './MainNavItem';
 
 export type MainMenuItem = {
   link: string;

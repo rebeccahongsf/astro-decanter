@@ -1,6 +1,6 @@
 import React from 'react';
 import { cnb } from 'cnbuilder';
-import * as styles from './MainMenuItem.styles'; // Import your styles from the appropriate location
+import * as styles from './MainNavItem.styles'; // Import your styles from the appropriate location
 
 interface MainNavItemProps {
   link: string;
