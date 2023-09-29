@@ -3,6 +3,7 @@ import { Container } from '../components/Container';
 import { GlobalFooter } from '../components/GlobalFooter';
 import { IdentityBar } from '../components/IdentityBar';
 import { Masthead } from '../components/Masthead';
+import '../styles/globals.css'
 
 interface Props {
 	title: string;
@@ -18,8 +19,7 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro Decanter description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} /> 
-		<link href="/dist/css/decanter.css" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
