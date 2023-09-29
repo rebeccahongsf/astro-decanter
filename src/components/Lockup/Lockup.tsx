@@ -12,14 +12,15 @@ import * as styles from './Lockup.styles'
 
 type LockupProps = {
   color?: types.lockupColors,
+  className?: string;
   url: string;
   isLink?: boolean,
   line1: string,
 }
 
-export const Lockup = ({ color = 'default', url, isLink = true, line1, ...props }: LockupProps) => {
+export const Lockup = ({ color = 'default', className, url, isLink = true, line1, ...props }: LockupProps) => {
   const LockupContent = (
-    <FlexBox direction="col" className="md:flex-row basefont-19">
+    <FlexBox direction="col" className={cnb("md:flex-row basefont-19", className)}>
       <Logo
         type='short'
         color={styles.lockupLogo[color]}

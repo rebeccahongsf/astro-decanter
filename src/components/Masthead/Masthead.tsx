@@ -17,7 +17,7 @@ export const Masthead = ({}) => {
       <Skiplink />
       <IdentityBar />
       <Container>
-        <Lockup url='/' line1='Astro Decanter' />
+        <Lockup url='/' line1='Astro Decanter' className="rs-pt-2" />
         <div>
           <MainMenu mainMenuItems={mainMenuGroups} />
       </div>
