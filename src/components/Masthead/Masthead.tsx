@@ -15,7 +15,7 @@ export const Masthead = ({}) => {
   return (
     <header className="shadow-lg border-b border-black-20 z-50">
       <Skiplink />
-      <IdentityBar />
+      <IdentityBar color="digital-red" />
       <Container>
         <Lockup url='/' line1='Astro Decanter' className="rs-pt-2" />
         <div>

@@ -4,13 +4,15 @@ import { SrOnlyText } from '../Typography';
 import { Container } from '../Container';
 import { FlexBox } from '../FlexBox';
 import * as styles from './GlobalFooter.styles';
+import * as types from './GlobalFooter.types';
 
 type GlobalFooterProps = {
+  color?: types.GlobalFooterType;
   className?: string;
 };
 
-export const GlobalFooter = ({ className }: GlobalFooterProps) => (
-  <Container as="footer" className={cnb(styles.root, className)}>
+export const GlobalFooter = ({ color='cardinal-red', className }: GlobalFooterProps) => (
+  <Container as="footer" className={cnb(styles.root, styles.bgColor[color], className)}>
     <FlexBox direction="col" className={styles.outerWrapper}>
       <div className={styles.logoWrapper}>
         <StanfordLogo isLink tabIndex={-1} aria-hidden className={styles.logo} type="stacked" color="white" />
