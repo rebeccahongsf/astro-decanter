@@ -2,6 +2,7 @@
 import { Container } from '../components/Container';
 import { GlobalFooter } from '../components/GlobalFooter';
 import { IdentityBar } from '../components/IdentityBar';
+import { Masthead } from '../components/Masthead';
 
 interface Props {
 	title: string;
@@ -23,7 +24,8 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<IdentityBar />
-		<Container as="main" bgColor="white">
+		<Masthead />
+		<Container as="main" bgColor="white" className="z-10">
 			<slot />
 		</Container>
 		<GlobalFooter />

@@ -2,7 +2,7 @@
  * Default colors for the color prop.
  */
 export const logoColors = {
-  'cardinal-red': 'su-text-cardinal-red',
-  'black': 'su-text-black hocus:su-text-black',
-  'white': 'su-text-white hocus:su-text-white',
+  'cardinal-red': 'text-cardinal-red',
+  'black': 'text-black hocus:text-black',
+  'white': 'text-white hocus:text-white',
 };

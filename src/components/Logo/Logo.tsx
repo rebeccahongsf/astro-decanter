@@ -8,7 +8,7 @@ import * as types from './Logo.types'
  *
  */
 type LogoProps = {
-  color?: types.LogoColorType;
+  color?: string;
   className?: string;
   isLink?: boolean;
   type?: types.LogoType;
@@ -18,9 +18,10 @@ export const Logo = ({
   color = 'cardinal-red',
   className,
   isLink,
-  type,
+  type = 'full',
   ...props
 }: LogoProps) => {
+  const validColor = styles.logoColors[color as types.LogoColorType]
   let logoText;
 
   if (type) {
@@ -49,7 +50,7 @@ export const Logo = ({
   if (isLink) {
     return (
       <a
-        className={cnb('su-logo', color ? styles.logoColors[color] : '', className)}
+        className={cnb('su-logo font-serif', validColor, className)}
         href="https://www.stanford.edu"
       >
         {logoText}
@@ -58,6 +59,6 @@ export const Logo = ({
   }
 
   return (
-    <div className={cnb('su-logo', color ? styles.logoColors[color] : '', className)}>{logoText}</div>
+    <div className={cnb('su-logo font-serif', validColor, className)}>{logoText}</div>
   );
 };

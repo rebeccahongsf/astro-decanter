@@ -2,8 +2,8 @@ import React from 'react';
 import { cnb } from 'cnbuilder';
 import * as types from './IdentityBar.type';
 import * as styles from './IdentityBar.styles';
-import { Container } from '../Container/Container';
-import { Logo } from '../Logo/Logo';
+import { Container } from '../Container';
+import { Logo } from '../Logo';
 
 /**
  * Stanford Identity Bar Component.
@@ -26,7 +26,7 @@ export const IdentityBar = ({ color = 'cardinal-red', className, ...props }: Ide
     >
       <Logo
         className="su-text-20 su-leading-none"
-        color={color ? styles.IdentityBarLogoColor[color] : null}
+        color={styles.IdentityBarLogoColor[color]}
         type="full"
       />
     </Container>
