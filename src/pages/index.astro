@@ -1,7 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Heading, Paragraph } from '../components/Typography';
+import { Container } from '../components/Container';
 ---
 
-<Layout title="Welcome to Astro Decanter Starter.">
-		<h1>Welcome to <span class="text-cardinal-red font-semibold">Astro Decanter Starter</span></h1>
+<Layout title='Welcome to Astro Decanter Starter.'>
+	<header>
+		<Heading as="h1" className='rs-mt-5'>Astro Decanter Starter</Heading>
+	</header>
+	<Container width="full" className="rs-mb-7">
+		<Paragraph>
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+			cubilia Curae; Fusce id purus. Maecenas ullamcorper, dui et placerat
+			feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.
+			Suspendisse eu ligula. Donec posuere vulputate arcu. Curabitur vestibulum
+			aliquam leo. Phasellus ullamcorper ipsum rutrum nunc. Fusce vel dui. Etiam
+			ut purus mattis mauris sodales aliquam. Proin magna. Etiam sollicitudin,
+			ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante
+			odio sit amet eros.
+		</Paragraph>
+	</Container>
 </Layout>
