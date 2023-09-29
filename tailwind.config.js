@@ -5,7 +5,7 @@ export default {
     require('decanter')
   ],
   // This should point to your source files as Tailwind CSS scans your files for the css classes you use.
-  content: ["./src/**/*.{html,js,jsx,astro}"],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx,astro}"],
   theme: {
     extend: {},
   },
